@@ -5,7 +5,10 @@ __pycache__/
 
 # C extensions
 *.so
-
+./sample_cloud_deployment/
+sample_cloud_deployment
+/sample_cloud_deployment
+sample_cloud_deployment/
 # Distribution / packaging
 .Python
 build/
