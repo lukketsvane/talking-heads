@@ -16,40 +16,49 @@ spec:
     spec:
       containers:
       - name: realchar-container
-        image: <YOUR_IMAGE_TAG>
+        image: gcr.io/talkingheads-393117/realtime-ai-character:latest
         ports:
         - containerPort: 8000
         env:
         - name: DATABASE_URL
           value: sqlite:///./test.db
+        - name: LLM_USE
+          value: OPENAI
         - name: OPENAI_API_KEY
-          value: <YOUR_OPENAI_API_KEY>
+          value: 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
+        - name: OPENAI_MODEL
+          value: gpt-4
         - name: SPEECH_TO_TEXT_USE
-          value: LOCAL_WHISPER
+          value: OPENAI_WHISPER
         - name: GOOGLE_APPLICATION_CREDENTIALS
-          value: <YOUR_GOOGLE_CREDENTIALS_FILE_NAME>
+          value: google_credentials.json
         - name: OPEN_AI_WHISPER_API_KEY
-          value: <YOUR_OPENAI_API_KEY>
+          value: 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
         - name: TEXT_TO_SPEECH_USE
           value: ELEVEN_LABS
         - name: ELEVEN_LABS_API_KEY
-          value: <YOUR_ELEVEN_LABS_API_KEY>
+          value: a83d362558ed3d31ba3abe0b3bcf33e1
+          terence mckenna
+        - name: TERENCE_MCKENNA_VOICE
+          value: IvmL3Avc6NCn6sPwOtP9
+        - name: JORDAN_PETERSON_VOICE
+          value: 2TXcvHFQFNw3AUM4z2a4
+        - name: PI_VOICE
+          value: qCX8XLdsvO0LqRUFaWqy
+        - name: RAIDEN_VOICE
+          value: qCX8XLdsvO0LqRUFaWqy
+        - name: LOKI_VOICE
+          value: qCX8XLdsvO0LqRUFaWqy
+        - name: ELON_VOICE
+          value: IvmL3Avc6NCn6sPwOtP9
+        - name: JOBS_VOICE
+          value: qCX8XLdsvO0LqRUFaWqy
+        - name: BRUCE_VOICE
+          value: qCX8XLdsvO0LqRUFaWqy
         - name: USE_AUTH
           value: ""
         - name: AUTH_API_KEY
-          value: ""
-        - name: PI_VOICE
-          value: <YOUR_AI_VOICE_ID>
-        - name: RAIDEN_VOICE
-          value: <YOUR_AI_VOICE_ID>
-        - name: LOKI_VOICE
-          value: <YOUR_AI_VOICE_ID>
-        - name: ELON_VOICE
-          value: <YOUR_AI_VOICE_ID>
-        - name: JOBS_VOICE
-          value: <YOUR_AI_VOICE_ID>
-        - name: BRUCE_VOICE
-          value: <YOUR_AI_VOICE_ID>
+          value: D8M9sWRP2vAeKt3L5uKfTtbpqN6Zx4JP
 ---
 apiVersion: v1
 kind: Service

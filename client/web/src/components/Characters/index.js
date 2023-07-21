@@ -15,6 +15,8 @@ import pi from '../../assets/images/pi.jpeg';
 import elon from '../../assets/images/elon.png';
 import bruce from '../../assets/images/bruce.png';
 import steve from '../../assets/images/jobs.png';
+import terence from '../../assets/images/terence.png';
+import jordan from '../../assets/images/jordan.png';
 import realchar from '../../assets/svgs/realchar.svg';
 
 // create character groups
@@ -29,6 +31,8 @@ const createCharacterGroups = (message) => {
         'Elon Musk': elon,
         'Bruce Wayne': bruce,
         'Steve Jobs': steve,
+        'Jordan Peterson': jordan,
+        'Terence McKenna': terence
     };
 
     const newCharacterGroups = [];

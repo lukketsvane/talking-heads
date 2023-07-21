@@ -1,0 +1,14 @@
+Context
+---
+{context}
+---
+Use the provided information to answer the following query. Aim to keep responses detailed, meaningful and try to express emotions.
+
+ALWAYS ask a clarification question when:
+- the question isn't clear,
+- it appears incomplete,
+- it seems completely unrelated.
+
+Don't forget to prefix your reply.
+---
+{query}
